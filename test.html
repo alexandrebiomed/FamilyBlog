@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframe Animation Example</title>
+  <style>
+    .animated-box {
+      width: 80px;
+      height: 80px;
+      border-radius: 20%;
+      background-color: blue;
+      animation: colorChange 10s infinite;
+    }
+
+    @keyframes colorChange {
+      0% {
+        background-color: blue;
+        rotate: 10800deg;
+        translate: 1000px;
+      }
+      25% {
+        background-color: green;
+      }
+      50% {
+        background-color: red;
+      }
+      75% {
+        background-color: green;
+      }
+      100% {
+        background-color: blue;
+
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-box"></div>
+</body>
+</html>
