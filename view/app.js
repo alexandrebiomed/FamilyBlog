@@ -16,7 +16,7 @@ app.use(morgan("tiny"));
 
 // Serve the HTML form
 app.get('/', (req, res) => {
-    res.render(path.join(__dirname, "index.html"));
+    res.render("./public/index.ejs");
 });
 
 app.get("/login", (req, res) => {
